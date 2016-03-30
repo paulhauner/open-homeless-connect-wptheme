@@ -1,0 +1,544 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Maisha\n"
+"POT-Creation-Date: 2015-05-23 10:01+0100\n"
+"PO-Revision-Date: 2015-05-23 10:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_nx\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../maishawp/404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../maishawp/404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../maishawp/archive.php:52 ../maishawp/archive.php:84
+#: ../maishawp/archive.php:127 ../maishawp/archive.php:174
+#: ../maishawp/archive.php:207 ../maishawp/archive.php:233
+#: ../maishawp/archive.php:271 ../maishawp/index.php:53
+#: ../maishawp/index.php:92 ../maishawp/index.php:135
+#: ../maishawp/index.php:183 ../maishawp/index.php:219
+#: ../maishawp/index.php:251 ../maishawp/index.php:296
+#: ../maishawp/search.php:44
+msgid "Previous page"
+msgstr ""
+
+#: ../maishawp/archive.php:53 ../maishawp/archive.php:85
+#: ../maishawp/archive.php:128 ../maishawp/archive.php:175
+#: ../maishawp/archive.php:208 ../maishawp/archive.php:234
+#: ../maishawp/archive.php:272 ../maishawp/index.php:54
+#: ../maishawp/index.php:93 ../maishawp/index.php:136
+#: ../maishawp/index.php:184 ../maishawp/index.php:220
+#: ../maishawp/index.php:252 ../maishawp/index.php:297
+#: ../maishawp/search.php:45
+msgid "Next page"
+msgstr ""
+
+#: ../maishawp/archive.php:54 ../maishawp/archive.php:86
+#: ../maishawp/archive.php:129 ../maishawp/archive.php:176
+#: ../maishawp/archive.php:209 ../maishawp/archive.php:235
+#: ../maishawp/archive.php:273 ../maishawp/content-about-firstblock.php:20
+#: ../maishawp/content-about-page.php:25
+#: ../maishawp/content-about-page.php:44
+#: ../maishawp/content-about-secondblock.php:26
+#: ../maishawp/content-front-firstblock.php:26
+#: ../maishawp/content-front-page-one.php:18
+#: ../maishawp/content-front-page.php:26
+#: ../maishawp/content-front-secondblock.php:28
+#: ../maishawp/content-front-thirdblock.php:24
+#: ../maishawp/content-grid-about.php:29 ../maishawp/content-grid-page.php:26
+#: ../maishawp/content-grid-page.php:45
+#: ../maishawp/content-grid-projects-one.php:30
+#: ../maishawp/content-grid-projects.php:33
+#: ../maishawp/content-grid-staff.php:39 ../maishawp/content-grid.php:34
+#: ../maishawp/content-icon-list.php:36 ../maishawp/content-link.php:46
+#: ../maishawp/content-page.php:19 ../maishawp/content-post-grid.php:44
+#: ../maishawp/content-post-list.php:48 ../maishawp/content-quote.php:32
+#: ../maishawp/content-quote.php:54 ../maishawp/content.php:48
+#: ../maishawp/index.php:55 ../maishawp/index.php:94
+#: ../maishawp/index.php:137 ../maishawp/index.php:185
+#: ../maishawp/index.php:221 ../maishawp/index.php:253
+#: ../maishawp/index.php:298 ../maishawp/search.php:46
+msgid "Page"
+msgstr ""
+
+#: ../maishawp/author-bio.php:11
+msgid "Published by"
+msgstr ""
+
+#: ../maishawp/author-bio.php:35
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../maishawp/comments.php:28
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: ../maishawp/comments.php:54
+msgid "Comments are closed."
+msgstr ""
+
+#: ../maishawp/content-about-firstblock.php:16
+#: ../maishawp/content-about-page.php:21
+#: ../maishawp/content-about-page.php:40
+#: ../maishawp/content-about-secondblock.php:22
+#: ../maishawp/content-front-firstblock.php:22
+#: ../maishawp/content-front-page-one.php:14
+#: ../maishawp/content-front-page.php:22
+#: ../maishawp/content-front-secondblock.php:24
+#: ../maishawp/content-front-thirdblock.php:20
+#: ../maishawp/content-grid-about.php:25 ../maishawp/content-grid-page.php:22
+#: ../maishawp/content-grid-page.php:41
+#: ../maishawp/content-grid-projects-one.php:26
+#: ../maishawp/content-grid-projects.php:29
+#: ../maishawp/content-grid-staff.php:35 ../maishawp/content-grid.php:30
+#: ../maishawp/content-icon-list.php:32 ../maishawp/content-link.php:42
+#: ../maishawp/content-page.php:15 ../maishawp/content-post-grid.php:40
+#: ../maishawp/content-post-list.php:44 ../maishawp/content-quote.php:28
+#: ../maishawp/content-quote.php:50 ../maishawp/content.php:44
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: ../maishawp/content-front-secondblock.php:19
+#: ../maishawp/content-grid-about.php:20
+#: ../maishawp/content-grid-projects-one.php:21
+#: ../maishawp/content-grid-projects.php:24
+#: ../maishawp/content-grid-staff.php:30 ../maishawp/content-grid.php:25
+#: ../maishawp/content-icon-list.php:27 ../maishawp/content-link.php:37
+#: ../maishawp/content-post-grid.php:35 ../maishawp/content-post-list.php:39
+#: ../maishawp/content-quote.php:23 ../maishawp/content-quote.php:45
+#: ../maishawp/content.php:39 ../maishawp/inc/template-tags.php:236
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: ../maishawp/content-link.php:29 ../maishawp/content-post-grid.php:53
+#: ../maishawp/content-post-list.php:27 ../maishawp/content-quote.php:64
+#: ../maishawp/content-search.php:31 ../maishawp/content.php:31
+msgid "Edit"
+msgstr ""
+
+#: ../maishawp/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../maishawp/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../maishawp/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../maishawp/content-none.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../maishawp/functions.php:72
+msgid "Primary Menu"
+msgstr ""
+
+#: ../maishawp/functions.php:73
+msgid "Social Links Menu"
+msgstr ""
+
+#: ../maishawp/functions.php:139
+msgid "Blog Sidebar"
+msgstr ""
+
+#: ../maishawp/functions.php:141 ../maishawp/functions.php:168
+#: ../maishawp/functions.php:177 ../maishawp/functions.php:186
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: ../maishawp/functions.php:148
+msgid "Front Page Recent Posts Block"
+msgstr ""
+
+#: ../maishawp/functions.php:150
+msgid ""
+"Use this widget area to display Maisha Front Page: 4 Column Recent Posts "
+"widget"
+msgstr ""
+
+#: ../maishawp/functions.php:157
+msgid "Footer Widget Area"
+msgstr ""
+
+#: ../maishawp/functions.php:159
+msgid ""
+"Use this widget area to display widgets in the first column of the footer"
+msgstr ""
+
+#: ../maishawp/functions.php:166
+msgid "BuddyPress Sidebar"
+msgstr ""
+
+#: ../maishawp/functions.php:175
+msgid "bbPress Sidebar"
+msgstr ""
+
+#: ../maishawp/functions.php:184
+msgid "Default Sidebar"
+msgstr ""
+
+#: ../maishawp/functions.php:258
+msgid "expand child menu"
+msgstr ""
+
+#: ../maishawp/functions.php:259
+msgid "collapse child menu"
+msgstr ""
+
+#: ../maishawp/header-custom.php:27 ../maishawp/header-custom.php:45
+#: ../maishawp/header-custom.php:58 ../maishawp/header-custom.php:76
+#: ../maishawp/header-custom.php:89 ../maishawp/header-custom.php:107
+#: ../maishawp/header.php:27 ../maishawp/header.php:45
+#: ../maishawp/header.php:58 ../maishawp/header.php:76
+#: ../maishawp/header.php:89 ../maishawp/header.php:107
+msgid "Skip to content"
+msgstr ""
+
+#: ../maishawp/header-custom.php:43 ../maishawp/header-custom.php:74
+#: ../maishawp/header-custom.php:105 ../maishawp/header.php:43
+#: ../maishawp/header.php:74 ../maishawp/header.php:105
+msgid "Menu"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:22
+msgid "Front Page"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:32 ../maishawp/inc/customizer.php:73
+msgid "First Content Block"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:44 ../maishawp/inc/customizer.php:85
+msgid "Second Content Block"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:56
+msgid "Third Content Block"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:63
+msgid "About Page"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:95
+msgid "Projects Page"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:105
+msgid "Projects Page Settings"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:120
+msgid "Causes Page"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:130
+msgid "Causes Page Settings"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:145
+msgid "Stories Page"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:155
+msgid "Stories Page Settings"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:170
+msgid "Blog Page"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:180
+msgid "Blog Layout"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:202
+msgid "Hide Post Meta"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:215
+msgid "Single Post Layout"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:233
+msgid "Hide Related Post on Single Post"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:246
+msgid "Archive Layout"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:266 ../maishawp/inc/customizer.php:276
+msgid "Header Options"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:292 ../maishawp/inc/customizer.php:302
+msgid "Social Menu Position on Desktop"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:313 ../maishawp/inc/customizer.php:321
+msgid "Logo"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:315
+msgid ""
+"Upload a logo to replace the default site name and description in the header"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:330 ../maishawp/inc/customizer.php:341
+msgid "Custom CSS"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:363
+msgid "All Elements with Orange Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:374
+msgid "Orange Button Hover Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:385
+msgid "Dark Gray Background Elements"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:396
+msgid "Light Gray Background Elements"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:407
+msgid "White Header Background"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:418
+msgid "Submenu Background Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:429
+msgid "Menu Text Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:440
+msgid "Submenu Text Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:451
+msgid "Current Menu Item Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:462
+msgid "Footer Text Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:473
+msgid "Orange Button Text Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:484
+msgid "Copyright Top Border Color"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:494
+msgid "Copyright Settings"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:495
+msgid "This is a settings section."
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:500
+msgid "Maisha Theme by Anariel Design. All rights reserved"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:504
+msgid "Copyright text"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:515
+msgid "Hide copyright text"
+msgstr ""
+
+#: ../maishawp/inc/customizer.php:526 ../maishawp/inc/customizer.php:534
+msgid "Favicon"
+msgstr ""
+
+#: ../maishawp/inc/template-tags.php:22
+msgid "Comment navigation"
+msgstr ""
+
+#: ../maishawp/inc/template-tags.php:25
+msgid "Older Comments"
+msgstr ""
+
+#: ../maishawp/inc/template-tags.php:29
+msgid "Newer Comments"
+msgstr ""
+
+#: ../maishawp/inc/template-tags.php:48
+msgid "Featured"
+msgstr ""
+
+#: ../maishawp/inc/template-tags.php:121
+msgid "Leave a comment"
+msgstr ""
+
+#: ../maishawp/inc/template-tags.php:121
+msgid "1 Comment"
+msgstr ""
+
+#: ../maishawp/inc/template-tags.php:121
+msgid "% Comments"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:15
+msgid "3 Column Recents Posts Widget with Featured Images."
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:16
+msgid "Maisha Front Page: 3 Column Recent Posts"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:75 ../maishawp/inc/widgets.php:151
+#: ../maishawp/inc/widgets.php:227 ../maishawp/inc/widgets.php:303
+#: ../maishawp/inc/widgets.php:349 ../maishawp/inc/widgets.php:413
+msgid "Title:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:77 ../maishawp/inc/widgets.php:153
+#: ../maishawp/inc/widgets.php:229 ../maishawp/inc/widgets.php:305
+msgid "Number of posts to show:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:79 ../maishawp/inc/widgets.php:155
+#: ../maishawp/inc/widgets.php:231 ../maishawp/inc/widgets.php:307
+msgid "Category slug (optional, separate multiple categories by comma):"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:91
+msgid "4 Column Recents Posts Widget with Featured Images."
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:92
+msgid "Maisha Front Page: 4 Column Recent Posts"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:167
+msgid "5 Column Recents Posts Widget with Featured Images."
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:168
+msgid "Maisha Front Page: 5 Column Recent Posts"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:243
+msgid "6 Column Recents Posts Widget with Featured Images."
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:244
+msgid "Maisha Front Page: 6 Column Recent Posts"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:319
+msgid "One Image Banner"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:320
+msgid "Maisha Sidebar: One Image Banner"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:351
+msgid "Image URL:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:353
+msgid "Image ALT:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:355
+msgid "Image LINK:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:367
+msgid "Two Image Banner"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:368
+msgid "Maisha Sidebar: Two Image Banner"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:415
+msgid "Image One URL:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:417
+msgid "Image One ALT:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:419
+msgid "Image One LINK:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:421
+msgid "Image Two URL:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:423
+msgid "Image Two ALT:"
+msgstr ""
+
+#: ../maishawp/inc/widgets.php:425
+msgid "Image Two LINK:"
+msgstr ""
+
+#: ../maishawp/related_posts.php:24
+msgid "You Might Also Like"
+msgstr ""
+
+#: ../maishawp/search.php:25
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../maishawp/single.php:40 ../maishawp/single.php:72
+#: ../maishawp/single.php:105
+msgid "Next"
+msgstr ""
+
+#: ../maishawp/single.php:41 ../maishawp/single.php:73
+#: ../maishawp/single.php:106
+msgid "Next post:"
+msgstr ""
+
+#: ../maishawp/single.php:43 ../maishawp/single.php:75
+#: ../maishawp/single.php:108
+msgid "Previous"
+msgstr ""
+
+#: ../maishawp/single.php:44 ../maishawp/single.php:76
+#: ../maishawp/single.php:109
+msgid "Previous post:"
+msgstr ""
