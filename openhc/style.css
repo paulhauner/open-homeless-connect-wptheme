@@ -232,7 +232,7 @@ h5,
 h6 {
 	clear: both;
 	font-weight: 700;
-	font-family: 'Raleway', arial, sans-serif;
+	font-family: 'Gotham', 'Helvetica Neue', arial, sans-serif;
 }
 
 p {
@@ -2928,7 +2928,7 @@ a.more-link {
 .cd-fixed-bg {
 	position: relative;
 	max-width: 100%;
-	min-height: 900px;
+	min-height: 616px;
 	background: no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -2937,12 +2937,12 @@ a.more-link {
 }
 
 .content-caption {
-	background: rgba(0,0,0,0.6);
+	background: transparent;
 	color: #fff;
 	max-width: 30%;
 	left: 10%;
 	right: 0;
-	top: 30%;
+	top: 20%;
 	position: absolute;
 	padding: 30px;
 }
@@ -2952,7 +2952,6 @@ a.more-link {
 }
 
 .content-caption .entry-content h1 {
-	letter-spacing: .2em;
 	margin-top: 0;
 }
 
