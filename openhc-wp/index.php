@@ -9,8 +9,8 @@
  *
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 get_header( 'custom' ); ?>
@@ -18,7 +18,7 @@ get_header( 'custom' ); ?>
 		<div class="content site-content">
 			<main class="main site-main" role="main">
 				<div class="single-themes-page clear news">
-					<?php if(get_theme_mod('maisha_blog_layout') == 'sidebar-left') : ?>
+					<?php if(get_theme_mod('openhc_blog_layout') == 'sidebar-left') : ?>
 						<div class="one_third">
 							<div id="sidebar" class="sidebar">
 							<?php get_sidebar(); ?>
@@ -50,9 +50,9 @@ get_header( 'custom' ); ?>
 
 								// Previous/next page navigation.
 								the_posts_pagination( array(
-									'prev_text'       => esc_html__( 'Previous page', 'maisha' ),
-									'next_text'       => esc_html__( 'Next page', 'maisha' ),
-									'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+									'prev_text'       => esc_html__( 'Previous page', 'openhc' ),
+									'next_text'       => esc_html__( 'Next page', 'openhc' ),
+									'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 								) );
 
 							// If no content, include the "No posts found" template.
@@ -63,7 +63,7 @@ get_header( 'custom' ); ?>
 							?>
 							</div>
 						</div>
-						<?php elseif(get_theme_mod('maisha_blog_layout') == 'full') : ?>
+						<?php elseif(get_theme_mod('openhc_blog_layout') == 'full') : ?>
 						<div id="primary" class="content-area full">
 							<?php if ( have_posts() ) : ?>
 
@@ -89,9 +89,9 @@ get_header( 'custom' ); ?>
 
 								// Previous/next page navigation.
 								the_posts_pagination( array(
-									'prev_text'       => esc_html__( 'Previous page', 'maisha' ),
-									'next_text'       => esc_html__( 'Next page', 'maisha' ),
-									'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+									'prev_text'       => esc_html__( 'Previous page', 'openhc' ),
+									'next_text'       => esc_html__( 'Next page', 'openhc' ),
+									'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 								) );
 
 							// If no content, include the "No posts found" template.
@@ -101,7 +101,7 @@ get_header( 'custom' ); ?>
 							endif;
 							?>
 						</div>
-						<?php elseif(get_theme_mod('maisha_blog_layout') == 'grid-right') : ?>
+						<?php elseif(get_theme_mod('openhc_blog_layout') == 'grid-right') : ?>
 						<div class="two_third">
 						<div id="primary" class="content-area">
 						<div class="columns clear grid-post">
@@ -132,9 +132,9 @@ get_header( 'custom' ); ?>
 					<?php
 					// Previous/next page navigation.
 							the_posts_pagination( array(
-								'prev_text'       => esc_html__( 'Previous page', 'maisha' ),
-								'next_text'       => esc_html__( 'Next page', 'maisha' ),
-								'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+								'prev_text'       => esc_html__( 'Previous page', 'openhc' ),
+								'next_text'       => esc_html__( 'Next page', 'openhc' ),
+								'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 							) ); ?>
 					</div>
 					</div>
@@ -144,7 +144,7 @@ get_header( 'custom' ); ?>
 					<?php get_sidebar(); ?>
 					</div><!-- .sidebar -->
 					</div>
-					<?php elseif(get_theme_mod('maisha_blog_layout') == 'grid-left') : ?>
+					<?php elseif(get_theme_mod('openhc_blog_layout') == 'grid-left') : ?>
 						<div class="one_third">
 						<div id="sidebar" class="sidebar">
 						<?php get_sidebar(); ?>
@@ -180,14 +180,14 @@ get_header( 'custom' ); ?>
 					<?php
 					// Previous/next page navigation.
 							the_posts_pagination( array(
-								'prev_text'       => esc_html__( 'Previous page', 'maisha' ),
-								'next_text'       => esc_html__( 'Next page', 'maisha' ),
-								'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+								'prev_text'       => esc_html__( 'Previous page', 'openhc' ),
+								'next_text'       => esc_html__( 'Next page', 'openhc' ),
+								'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 							) ); ?>
 					</div>
 					</div>
 					</div>
-					<?php elseif(get_theme_mod('maisha_blog_layout') == 'grid-full') : ?>
+					<?php elseif(get_theme_mod('openhc_blog_layout') == 'grid-full') : ?>
 						<div class="columns clear grid-post">
 						<?php if ( have_posts() ) : ?>
 							<?php
@@ -216,12 +216,12 @@ get_header( 'custom' ); ?>
 					<?php
 					// Previous/next page navigation.
 							the_posts_pagination( array(
-								'prev_text'       => esc_html__( 'Previous page', 'maisha' ),
-								'next_text'       => esc_html__( 'Next page', 'maisha' ),
-								'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+								'prev_text'       => esc_html__( 'Previous page', 'openhc' ),
+								'next_text'       => esc_html__( 'Next page', 'openhc' ),
+								'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 							) ); ?>
 					</div>
-					<?php elseif(get_theme_mod('maisha_blog_layout') == 'list') : ?>
+					<?php elseif(get_theme_mod('openhc_blog_layout') == 'list') : ?>
 					<div class="two_third list">
 					<div id="primary" class="content-area">
 					<?php if ( have_posts() ) : ?>
@@ -248,9 +248,9 @@ get_header( 'custom' ); ?>
 
 						// Previous/next page navigation.
 						the_posts_pagination( array(
-							'prev_text'       => esc_html__( 'Previous page', 'maisha' ),
-							'next_text'       => esc_html__( 'Next page', 'maisha' ),
-							'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+							'prev_text'       => esc_html__( 'Previous page', 'openhc' ),
+							'next_text'       => esc_html__( 'Next page', 'openhc' ),
+							'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 						) );
 
 					// If no content, include the "No posts found" template.
@@ -293,9 +293,9 @@ get_header( 'custom' ); ?>
 
 						// Previous/next page navigation.
 						the_posts_pagination( array(
-							'prev_text'       => esc_html__( 'Previous page', 'maisha' ),
-							'next_text'       => esc_html__( 'Next page', 'maisha' ),
-							'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+							'prev_text'       => esc_html__( 'Previous page', 'openhc' ),
+							'next_text'       => esc_html__( 'Next page', 'openhc' ),
+							'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 						) );
 
 					// If no content, include the "No posts found" template.

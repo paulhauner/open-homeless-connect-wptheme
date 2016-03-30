@@ -4,8 +4,8 @@
  *
  * Contains the closing of the "site-content" div and all content after.
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 ?>
 	</div><!-- #site -->
@@ -21,14 +21,14 @@
 						<?php if( get_theme_mod( 'hide_copyright' ) == '') { ?>
 						<?php
 							/**
-							 * Fires before the Maisha footer text for footer customization.
+							 * Fires before the openhc footer text for footer customization.
 							 *
-							 * @since Maisha 1.0
+							 * @since openhc 1.0
 							 */
-							do_action( 'maisha_credits' );
+							do_action( 'openhc_credits' );
 						?>
-						<?php esc_attr_e('&copy;', 'maisha'); ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"> <?php echo esc_textarea ( get_theme_mod( 'maisha_copyright', 'Maisha Theme by Anariel Design.' ) ); ?> </a>
+						<?php esc_attr_e('&copy;', 'openhc'); ?>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"> <?php echo esc_textarea ( get_theme_mod( 'openhc_copyright', 'openhc Theme by Anariel Design.' ) ); ?> </a>
 						<?php } // end if ?>
 						</div>
 					</div><!-- .footerwidgets -->

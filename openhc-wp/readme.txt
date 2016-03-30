@@ -1,4 +1,4 @@
-= Maisha =
+= openhc =
 
 * by Anariel Design, http://www.anarieldesign.com
 
@@ -6,11 +6,11 @@
 License: Distributed under the terms of the GNU GPL
 Copyright: Automattic, automattic.com
 
-Maisha is distributed under the terms of the GNU GPL
+openhc is distributed under the terms of the GNU GPL
 
 1.2.4 - March 5,2016
 
-- fix for the footer on the shop page. Changes inside the “inc” folder - maisha_customizer_style.php file
+- fix for the footer on the shop page. Changes inside the “inc” folder - openhc_customizer_style.php file
 
 1.2.3 - January 29,2016
 
@@ -54,9 +54,9 @@ Version 1.0.6 - August 2 2015.
 1. small changes inside style.css, header.php, header-custom.php, footer.php and js/navigation.js files - accessibility fixes
 2. small fix inside the functions.php file:
 instead of:
-wp_enqueue_script( 'maisha-search', get_template_directory_uri() . '/js/search.js', array(), '1.0', true );
+wp_enqueue_script( 'openhc-search', get_template_directory_uri() . '/js/search.js', array(), '1.0', true );
 added:
-wp_enqueue_script( 'maisha-search', get_template_directory_uri() . '/js/search.js', array( 'jquery' ), '1.0', true );
+wp_enqueue_script( 'openhc-search', get_template_directory_uri() . '/js/search.js', array( 'jquery' ), '1.0', true );
 
 Version 1.0.5 - July 19 2015.
 1. inside page.php, content-quote.php, content-grid-page.php, content-front-secondblock.php, content-front-page.php, content-about-secondblock.php, content-about-page.php, full-width-page.php, basic-page.php : 
@@ -64,7 +64,7 @@ Version 1.0.5 - July 19 2015.
 
 2. small changes inside the header.php, header-custom.php and style.css files - better styled search block
 
-3. small fix inside the inc/maisha_custmoizer_style.php for the social menu on small devices
+3. small fix inside the inc/openhc_custmoizer_style.php for the social menu on small devices
 
 Version 1.0.4 - July 10 2015.
 1. fix for widget call (from WordPress 4.3) inside the inc folder widgets.php file - fix for Use parent::__construct() instead of $this->WP_Widget().
@@ -74,11 +74,11 @@ Version 1.0.4 - July 10 2015.
 3. added new page template - “Basic Page” - you can use this template if you want to create pages using page builder like free Page Builder by SiteOrigin
 
 Version 1.0.3 - June 29, 2015
-- small changes inside the inc/widgets.php, content-front-secondblock.php and style.css files: 1. fix for the Maisha custom recent post widgets if you add widget title
+- small changes inside the inc/widgets.php, content-front-secondblock.php and style.css files: 1. fix for the openhc custom recent post widgets if you add widget title
        2. if you add more content for the second block on the front page background will adapt with the height
        3. search box z-index fix if your fixed header is higher
 Version 1.0.2 - June 19, 2015
-- added search box option. Changes are done inside the header.php, header-custom.php, inl/customizer.php, inc/maisha_customizer_style.php, functions.php and js/search.js (new file)
+- added search box option. Changes are done inside the header.php, header-custom.php, inl/customizer.php, inc/openhc_customizer_style.php, functions.php and js/search.js (new file)
 - added styles inside the style.css file
 Version 1.0.1 - June 08, 2015
 - inside the “header-custom.php” file we changed this line:

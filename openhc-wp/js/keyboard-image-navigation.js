@@ -1,10 +1,10 @@
 /**
- * Maisha keyboard support for image navigation.
+ * openhc keyboard support for image navigation.
  */
 
 ( function( $ ) {
 	"use strict";
-	$( document ).on( 'keydown.maisha', function( e ) {
+	$( document ).on( 'keydown.openhc', function( e ) {
 		var url = false;
 
 		// Left arrow key code.

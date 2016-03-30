@@ -2,8 +2,8 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
  ?>
 

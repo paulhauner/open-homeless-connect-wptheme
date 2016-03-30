@@ -1,6 +1,6 @@
 <?php
 /**
- * Maisha functions and definitions
+ * openhc functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -20,19 +20,19 @@
  * For more information on hooks, actions, and filters,
  * {@link https://codex.wordpress.org/Plugin_API}
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 1154;
 }
-if ( ! function_exists( 'maisha_setup' ) ) :
+if ( ! function_exists( 'openhc_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -40,16 +40,16 @@ if ( ! function_exists( 'maisha_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
-function maisha_setup() {
+function openhc_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on maisha, use a find and replace
-	 * to change 'maisha' to the name of your theme in all the template files
+	 * If you're building a theme based on openhc, use a find and replace
+	 * to change 'openhc' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'maisha', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'openhc', get_template_directory() . '/languages' );
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 	/*
@@ -69,8 +69,8 @@ function maisha_setup() {
 	add_image_size( 'projects-thumbnail', 150, 9999 );
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu',      'maisha' ),
-		'social'  => esc_html__( 'Social Links Menu', 'maisha' ),
+		'primary' => esc_html__( 'Primary Menu',      'openhc' ),
+		'social'  => esc_html__( 'Social Links Menu', 'openhc' ),
 	) );
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -88,7 +88,7 @@ function maisha_setup() {
 		'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
 	) );
 	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'maisha_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'openhc_custom_background_args', array(
 		'default-color'      => 'ffffff',
 		'default-attachment' => 'fixed',
 	) ) );
@@ -96,14 +96,14 @@ function maisha_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
 	 */
-	add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css', maisha_fonts_url() ) );
+	add_editor_style( array( 'css/editor-style.css', 'genericons/genericons.css', openhc_fonts_url() ) );
 }
-endif; // maisha_setup
-add_action( 'after_setup_theme', 'maisha_setup' );
+endif; // openhc_setup
+add_action( 'after_setup_theme', 'openhc_setup' );
 /**
  * Count the number of widgets and create a class name.
  */
-function maisha_widget_counter( $sidebar_id ) {
+function openhc_widget_counter( $sidebar_id ) {
 	$the_sidebars = wp_get_sidebars_widgets();
 	if ( ! isset( $the_sidebars[$sidebar_id] ) )
 		$count = 0;
@@ -130,89 +130,89 @@ function maisha_widget_counter( $sidebar_id ) {
 /**
  * Register widget area.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  *
  * @link https://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function maisha_widgets_init() {
+function openhc_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Blog Sidebar', 'maisha' ),
+		'name'          => esc_html__( 'Blog Sidebar', 'openhc' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'maisha' ),
+		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'openhc' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s clear">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Front Page Recent Posts Block', 'maisha' ),
+		'name'          => esc_html__( 'Front Page Recent Posts Block', 'openhc' ),
 		'id'            => 'sidebar-7',
-		'description'   => esc_html__( 'Use this widget area to display Maisha Front Page: 4 Column Recent Posts widget', 'maisha' ),
+		'description'   => esc_html__( 'Use this widget area to display openhc Front Page: 4 Column Recent Posts widget', 'openhc' ),
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Widget Area', 'maisha' ),
+		'name'          => esc_html__( 'Footer Widget Area', 'openhc' ),
 		'id'            => 'sidebar-2',
-		'description'   => esc_html__( 'Use this widget area to display widgets in the footer', 'maisha' ),
+		'description'   => esc_html__( 'Use this widget area to display widgets in the footer', 'openhc' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'BuddyPress Sidebar', 'maisha' ),
+		'name'          => esc_html__( 'BuddyPress Sidebar', 'openhc' ),
 		'id'            => 'sidebar-3',
-		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'maisha' ),
+		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'openhc' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s clear">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'bbPress Sidebar', 'maisha' ),
+		'name'          => esc_html__( 'bbPress Sidebar', 'openhc' ),
 		'id'            => 'sidebar-4',
-		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'maisha' ),
+		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'openhc' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s clear">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Default Sidebar', 'maisha' ),
+		'name'          => esc_html__( 'Default Sidebar', 'openhc' ),
 		'id'            => 'sidebar-5',
-		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'maisha' ),
+		'description'   => esc_html__( 'Add widgets here to appear in your sidebar.', 'openhc' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s clear">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'maisha_widgets_init' );
-if ( ! function_exists( 'maisha_fonts_url' ) ) :
+add_action( 'widgets_init', 'openhc_widgets_init' );
+if ( ! function_exists( 'openhc_fonts_url' ) ) :
 /**
- * Register Google fonts for maisha.
+ * Register Google fonts for openhc.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  *
  * @return string Google fonts URL for the theme.
  */
-function maisha_fonts_url() {
+function openhc_fonts_url() {
 	$fonts_url = '';
 	$fonts     = array();
 	$subsets   = 'latin,latin-ext';
 	/* translators: If there are characters in your language that are not supported by Raleway, translate this to 'off'. Do not translate into your own language. */
-	if ( 'off' !== _x( 'on', 'Raleway font: on or off', 'maisha' ) ) {
+	if ( 'off' !== _x( 'on', 'Raleway font: on or off', 'openhc' ) ) {
 		$fonts[] = 'Raleway:400italic,100italic,200italic,300italic,500italic,600italic,700italic,800italic,900italic,400,100,200,300,500,600,700,800,900';
 	}
 	/* translators: If there are characters in your language that are not supported by Playfair Display, translate this to 'off'. Do not translate into your own language. */
-	if ( 'off' !== _x( 'on', 'Playfair Display font: on or off', 'maisha' ) ) {
+	if ( 'off' !== _x( 'on', 'Playfair Display font: on or off', 'openhc' ) ) {
 		$fonts[] = 'Playfair+Display:400,700,900,400italic,700italic,900italic';
 	}
 	/* translators: To add an additional character subset specific to your language, translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language. */
-	$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'maisha' );
+	$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'openhc' );
 	if ( 'cyrillic' == $subset ) {
 		$subsets .= ',cyrillic,cyrillic-ext';
 	} elseif ( 'greek' == $subset ) {
@@ -234,41 +234,41 @@ endif;
 /**
  * Enqueue scripts and styles.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
-function maisha_scripts() {
+function openhc_scripts() {
 	// Add custom fonts, used in the main stylesheet.
-	wp_enqueue_style( 'maisha-fonts', maisha_fonts_url(), array(), null );
+	wp_enqueue_style( 'openhc-fonts', openhc_fonts_url(), array(), null );
 	// Add Genericons, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.2' );
 	// Load our main stylesheet.
-	wp_enqueue_style( 'maisha-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'maisha-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20141010', true );
-	wp_enqueue_script( 'maisha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'maisha-search', get_template_directory_uri() . '/js/search.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_style( 'openhc-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'openhc-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20141010', true );
+	wp_enqueue_script( 'openhc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'openhc-search', get_template_directory_uri() . '/js/search.js', array( 'jquery' ), '1.0', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( 'maisha-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20141010' );
+		wp_enqueue_script( 'openhc-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20141010' );
 	}
 	if ( is_page_template( 'page-templates/front-page.php' )) {
-	wp_enqueue_script( 'maisha-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'openhc-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0', true );
 	}
-	wp_localize_script( 'maisha-script', 'screenReaderText', array(
-		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'maisha' ) . '</span>',
-		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'maisha' ) . '</span>',
+	wp_localize_script( 'openhc-script', 'screenReaderText', array(
+		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'openhc' ) . '</span>',
+		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'openhc' ) . '</span>',
 	) );
 }
-add_action( 'wp_enqueue_scripts', 'maisha_scripts' );
+add_action( 'wp_enqueue_scripts', 'openhc_scripts' );
 /**
  * Add featured image as background image to post navigation elements.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  *
  * @see wp_add_inline_style()
  */
-function maisha_post_nav_background() {
+function openhc_post_nav_background() {
 	if ( ! is_single() ) {
 		return;
 	}
@@ -290,13 +290,13 @@ function maisha_post_nav_background() {
 			.post-navigation .nav-next a:before { background-color: rgba(230, 234, 237, 0.4); }
 		';
 	}
-	wp_add_inline_style( 'maisha-style', $css );
+	wp_add_inline_style( 'openhc-style', $css );
 }
-add_action( 'wp_enqueue_scripts', 'maisha_post_nav_background' );
+add_action( 'wp_enqueue_scripts', 'openhc_post_nav_background' );
 /**
  * Display descriptions in main navigation.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  *
  * @param string  $item_output The menu item output.
  * @param WP_Post $item        Menu item object.
@@ -304,65 +304,65 @@ add_action( 'wp_enqueue_scripts', 'maisha_post_nav_background' );
  * @param array   $args        wp_nav_menu() arguments.
  * @return string Menu item with possible description.
  */
-function maisha_nav_description( $item_output, $item, $depth, $args ) {
+function openhc_nav_description( $item_output, $item, $depth, $args ) {
 	if ( 'primary' == $args->theme_location && $item->description ) {
 		$item_output = str_replace( $args->link_after . '</a>', '<div class="menu-item-description">' . $item->description . '</div>' . $args->link_after . '</a>', $item_output );
 	}
 	return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'maisha_nav_description', 10, 4 );
+add_filter( 'walker_nav_menu_start_el', 'openhc_nav_description', 10, 4 );
 /**
  * Add a `screen-reader-text` class to the search form's submit button.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  *
  * @param string $html Search form HTML.
  * @return string Modified search form HTML.
  */
-function maisha_search_form_modify( $html ) {
+function openhc_search_form_modify( $html ) {
 	return str_replace( 'class="search-submit"', 'class="search-submit screen-reader-text"', $html );
 }
-add_filter( 'get_search_form', 'maisha_search_form_modify' );
+add_filter( 'get_search_form', 'openhc_search_form_modify' );
 /**
  * Implement the Custom Header feature.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
 require get_template_directory() . '/inc/custom-header.php';
 /**
  * Custom template tags for this theme.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
 require get_template_directory() . '/inc/template-tags.php';
 /**
  * Customizer additions.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
 require( get_template_directory() . '/inc/jetpack.php' );
 /**
  * Load Widgets file.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
 require( get_template_directory() . '/inc/widgets.php' );
 /**
  * Load Styles.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
-require( get_template_directory() . '/inc/maisha_customizer_style.php' );
+require( get_template_directory() . '/inc/openhc_customizer_style.php' );
 /**
  * Remove More Jump Link.
  *
- * @since Maisha 1.0
+ * @since openhc 1.0
  */
 function remove_more_jump_link($link) {
 	$offset = strpos($link, '#more-');

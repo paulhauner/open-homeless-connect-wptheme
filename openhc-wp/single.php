@@ -2,8 +2,8 @@
 /**
  * The template for displaying all single posts and attachments
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 get_header(); ?>
@@ -11,7 +11,7 @@ get_header(); ?>
 		<div class="content site-content news">
 			<main class="main site-main" role="main">
 				<div class="single-themes-page clear">
-					<?php if(get_theme_mod('maisha_single_post_layout') == 'single-sidebar-left') : ?>
+					<?php if(get_theme_mod('openhc_single_post_layout') == 'single-sidebar-left') : ?>
 						<div class="one_third">
 							<div id="sidebar" class="sidebar">
 							<?php get_sidebar(); ?>
@@ -37,11 +37,11 @@ get_header(); ?>
 
 									// Previous/next post navigation.
 									the_post_navigation( array(
-										'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'maisha' ) . '</span> ' .
-											'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'maisha' ) . '</span> ' .
+										'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'openhc' ) . '</span> ' .
+											'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'openhc' ) . '</span> ' .
 											'<span class="post-title">%title</span>',
-										'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'maisha' ) . '</span> ' .
-											'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'maisha' ) . '</span> ' .
+										'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'openhc' ) . '</span> ' .
+											'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'openhc' ) . '</span> ' .
 											'<span class="post-title">%title</span>',
 									) );
 
@@ -50,7 +50,7 @@ get_header(); ?>
 								?>
 							</div>
 						</div>
-					<?php elseif(get_theme_mod('maisha_single_post_layout') == 'single-full') : ?>
+					<?php elseif(get_theme_mod('openhc_single_post_layout') == 'single-full') : ?>
 						<div id="primary" class="content-area">
 							<?php
 							// Start the loop.
@@ -69,11 +69,11 @@ get_header(); ?>
 
 								// Previous/next post navigation.
 								the_post_navigation( array(
-									'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'maisha' ) . '</span> ' .
-										'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'maisha' ) . '</span> ' .
+									'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'openhc' ) . '</span> ' .
+										'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'openhc' ) . '</span> ' .
 										'<span class="post-title">%title</span>',
-									'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'maisha' ) . '</span> ' .
-										'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'maisha' ) . '</span> ' .
+									'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'openhc' ) . '</span> ' .
+										'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'openhc' ) . '</span> ' .
 										'<span class="post-title">%title</span>',
 								) );
 
@@ -102,11 +102,11 @@ get_header(); ?>
 
 									// Previous/next post navigation.
 									the_post_navigation( array(
-										'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'maisha' ) . '</span> ' .
-											'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'maisha' ) . '</span> ' .
+										'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'openhc' ) . '</span> ' .
+											'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'openhc' ) . '</span> ' .
 											'<span class="post-title">%title</span>',
-										'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'maisha' ) . '</span> ' .
-											'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'maisha' ) . '</span> ' .
+										'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'openhc' ) . '</span> ' .
+											'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'openhc' ) . '</span> ' .
 											'<span class="post-title">%title</span>',
 									) );
 

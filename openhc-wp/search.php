@@ -9,8 +9,8 @@
  *
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 get_header(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 						<div id="primary" class="content-area">
 						<?php if ( have_posts() ) : ?>
 						<header class="page-header">
-						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'maisha' ), get_search_query() ); ?></h1>
+						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'openhc' ), get_search_query() ); ?></h1>
 						</header><!-- .page-header -->
 						<?php
 						// Start the loop.
@@ -41,9 +41,9 @@ get_header(); ?>
 
 						// Previous/next page navigation.
 						the_posts_pagination( array(
-							'prev_text'          => esc_html__( 'Previous page', 'maisha' ),
-							'next_text'          => esc_html__( 'Next page', 'maisha' ),
-							'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'maisha' ) . ' </span>',
+							'prev_text'          => esc_html__( 'Previous page', 'openhc' ),
+							'next_text'          => esc_html__( 'Next page', 'openhc' ),
+							'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>',
 						) );
 
 						// If no content, include the "No posts found" template.

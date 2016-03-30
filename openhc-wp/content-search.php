@@ -4,15 +4,15 @@
  *
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		// Post thumbnail.
-		maisha_post_thumbnail();
+		openhc_post_thumbnail();
 	?>
 
 	<header class="entry-header">
@@ -25,10 +25,10 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<?php if(!get_theme_mod('maisha_post_footer')) : ?>
+	<?php if(!get_theme_mod('openhc_post_footer')) : ?>
 	<footer class="entry-footer">
-		<?php maisha_entry_meta(); ?>
-		<?php edit_post_link( esc_html__( 'Edit', 'maisha' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php openhc_entry_meta(); ?>
+		<?php edit_post_link( esc_html__( 'Edit', 'openhc' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 	<?php endif; ?>
 

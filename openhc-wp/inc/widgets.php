@@ -1,19 +1,19 @@
 <?php
 /**
- * Available Maisha Custom Widgets
+ * Available openhc Custom Widgets
  *
  * Learn more: http://codex.wordpress.org/Widgets_API#Developing_Widgets
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 /*-----------------------------------------------------------------------------------*/
-/* Custom Maisha Widget: Front Page Three Columns Recent Posts
+/* Custom openhc Widget: Front Page Three Columns Recent Posts
 /*-----------------------------------------------------------------------------------*/
-class maisha_threecolumn_recentposts extends WP_Widget {
+class openhc_threecolumn_recentposts extends WP_Widget {
 	function __construct() {
-		$widget_ops = array('description' => esc_html__( '3 Column Recents Posts Widget with Featured Images.', 'maisha') );
-		parent::__construct(false, esc_html__('Maisha Front Page: 3 Column Recent Posts', 'maisha'),$widget_ops);
+		$widget_ops = array('description' => esc_html__( '3 Column Recents Posts Widget with Featured Images.', 'openhc') );
+		parent::__construct(false, esc_html__('openhc Front Page: 3 Column Recent Posts', 'openhc'),$widget_ops);
 	}
 	function widget($args, $instance) {
 		$title = apply_filters('widget_title', $instance['title'] );
@@ -43,7 +43,7 @@ if($recent_query->have_posts()) : ?>
 				<a href="<?php the_permalink(); ?>">
 				<?php
 				// Post thumbnail.
-				maisha_post_thumbnail();
+				openhc_post_thumbnail();
 				?>
 				</a>
 				<figcaption>
@@ -74,24 +74,24 @@ if($recent_query->have_posts()) : ?>
 			$postnumber = isset( $instance['postnumber'] ) ? esc_attr( $instance['postnumber'] ) : '3';
 			$category = isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
 		?>
-	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title:','maisha'); ?></label>
+	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" /></p>
-	<p><label for="<?php echo $this->get_field_id('postnumber'); ?>"><?php esc_html_e('Number of posts to show:','maisha'); ?></label>
+	<p><label for="<?php echo $this->get_field_id('postnumber'); ?>"><?php esc_html_e('Number of posts to show:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('postnumber') ); ?>" value="<?php echo esc_attr($postnumber); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>" /></p>
-	<p><label for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','maisha'); ?></label>
+	<p><label for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('category') ); ?>" value="<?php echo esc_attr($category); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('category') ); ?>" /></p>
 	<?php
 	}
 }
-register_widget('maisha_threecolumn_recentposts');
+register_widget('openhc_threecolumn_recentposts');
 
 /*-----------------------------------------------------------------------------------*/
-/* Custom Maisha Widget: Front Page Four Columns Recent Posts
+/* Custom openhc Widget: Front Page Four Columns Recent Posts
 /*-----------------------------------------------------------------------------------*/
-class maisha_column_recentposts extends WP_Widget {
+class openhc_column_recentposts extends WP_Widget {
 	function __construct() {
-		$widget_ops = array('description' => esc_html__( '4 Column Recents Posts Widget with Featured Images.', 'maisha') );
-		parent::__construct(false, esc_html__('Maisha Front Page: 4 Column Recent Posts', 'maisha'),$widget_ops);
+		$widget_ops = array('description' => esc_html__( '4 Column Recents Posts Widget with Featured Images.', 'openhc') );
+		parent::__construct(false, esc_html__('openhc Front Page: 4 Column Recent Posts', 'openhc'),$widget_ops);
 	}
 	function widget($args, $instance) {
 		$title = apply_filters('widget_title', $instance['title'] );
@@ -121,7 +121,7 @@ if($recent_query->have_posts()) : ?>
 				<a href="<?php the_permalink(); ?>">
 				<?php
 				// Post thumbnail.
-				maisha_post_thumbnail();
+				openhc_post_thumbnail();
 				?>
 				</a>
 				<figcaption>
@@ -152,24 +152,24 @@ if($recent_query->have_posts()) : ?>
 			$postnumber = isset( $instance['postnumber'] ) ? esc_attr( $instance['postnumber'] ) : '4';
 			$category = isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
 		?>
-	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title:','maisha'); ?></label>
+	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>"><?php esc_html_e('Number of posts to show:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>"><?php esc_html_e('Number of posts to show:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('postnumber') ); ?>" value="<?php echo esc_attr($postnumber); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('category') ); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('category') ); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('category') ); ?>" value="<?php echo esc_attr($category); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('category') ); ?>" /></p>
 	<?php
 	}
 }
-register_widget('maisha_column_recentposts');
+register_widget('openhc_column_recentposts');
 
 /*-----------------------------------------------------------------------------------*/
-/* Custom Maisha Widget: Front Page Five Columns Recent Posts
+/* Custom openhc Widget: Front Page Five Columns Recent Posts
 /*-----------------------------------------------------------------------------------*/
-class maisha_fivecolumn_recentposts extends WP_Widget {
+class openhc_fivecolumn_recentposts extends WP_Widget {
 	function __construct() {
-		$widget_ops = array('description' => esc_html__( '5 Column Recents Posts Widget with Featured Images.', 'maisha') );
-		parent::__construct(false, esc_html__('Maisha Front Page: 5 Column Recent Posts', 'maisha'),$widget_ops);
+		$widget_ops = array('description' => esc_html__( '5 Column Recents Posts Widget with Featured Images.', 'openhc') );
+		parent::__construct(false, esc_html__('openhc Front Page: 5 Column Recent Posts', 'openhc'),$widget_ops);
 	}
 	function widget($args, $instance) {
 		$title = apply_filters('widget_title', $instance['title'] );
@@ -199,7 +199,7 @@ if($recent_query->have_posts()) : ?>
 				<a href="<?php the_permalink(); ?>">
 				<?php
 				// Post thumbnail.
-				maisha_post_thumbnail();
+				openhc_post_thumbnail();
 				?>
 				</a>
 				<figcaption>
@@ -230,24 +230,24 @@ if($recent_query->have_posts()) : ?>
 			$postnumber = isset( $instance['postnumber'] ) ? esc_attr( $instance['postnumber'] ) : '5';
 			$category = isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
 		?>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>"><?php esc_html_e('Number of posts to show:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>"><?php esc_html_e('Number of posts to show:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('postnumber') ); ?>" value="<?php echo esc_attr($postnumber); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('category') ); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('category') ); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('category') ); ?>" value="<?php echo esc_attr($category); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('category') ); ?>" /></p>
 	<?php
 	}
 }
-register_widget('maisha_fivecolumn_recentposts');
+register_widget('openhc_fivecolumn_recentposts');
 
 /*-----------------------------------------------------------------------------------*/
-/* Custom Maisha Widget: Front Page Six Columns Recent Posts
+/* Custom openhc Widget: Front Page Six Columns Recent Posts
 /*-----------------------------------------------------------------------------------*/
-class maisha_sixcolumn_recentposts extends WP_Widget {
+class openhc_sixcolumn_recentposts extends WP_Widget {
 	function __construct() {
-		$widget_ops = array('description' => esc_html__( '6 Column Recents Posts Widget with Featured Images.', 'maisha') );
-		parent::__construct(false, esc_html__('Maisha Front Page: 6 Column Recent Posts', 'maisha'),$widget_ops);
+		$widget_ops = array('description' => esc_html__( '6 Column Recents Posts Widget with Featured Images.', 'openhc') );
+		parent::__construct(false, esc_html__('openhc Front Page: 6 Column Recent Posts', 'openhc'),$widget_ops);
 	}
 	function widget($args, $instance) {
 		$title = apply_filters('widget_title', $instance['title'] );
@@ -277,7 +277,7 @@ if($recent_query->have_posts()) : ?>
 				<a href="<?php the_permalink(); ?>">
 				<?php
 				// Post thumbnail.
-				maisha_post_thumbnail();
+				openhc_post_thumbnail();
 				?>
 				</a>
 				<figcaption>
@@ -308,24 +308,24 @@ if($recent_query->have_posts()) : ?>
 			$postnumber = isset( $instance['postnumber'] ) ? esc_attr( $instance['postnumber'] ) : '6';
 			$category = isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
 		?>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>"><?php esc_html_e('Number of posts to show:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>"><?php esc_html_e('Number of posts to show:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('postnumber') ); ?>" value="<?php echo esc_attr($postnumber); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('postnumber') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('category') ); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('category') ); ?>"><?php esc_html_e('Category slug (optional, separate multiple categories by comma):','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('category') ); ?>" value="<?php echo esc_attr($category); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('category') ); ?>" /></p>
 	<?php
 	}
 }
-register_widget('maisha_sixcolumn_recentposts');
+register_widget('openhc_sixcolumn_recentposts');
 
 /*-----------------------------------------------------------------------------------*/
-/* Custom Maisha Widget: Sidebar Banners Widget
+/* Custom openhc Widget: Sidebar Banners Widget
 /*-----------------------------------------------------------------------------------*/
-class maisha_one_banner extends WP_Widget {
+class openhc_one_banner extends WP_Widget {
 	function __construct() {
-		$widget_ops = array('description' => esc_html__( 'One Image Banner', 'maisha') );
-		parent::__construct(false, esc_html__('Maisha Sidebar: One Image Banner', 'maisha'),$widget_ops);
+		$widget_ops = array('description' => esc_html__( 'One Image Banner', 'openhc') );
+		parent::__construct(false, esc_html__('openhc Sidebar: One Image Banner', 'openhc'),$widget_ops);
 	}
 	function widget($args, $instance) {
 		$title = apply_filters('widget_title', $instance['title'] );
@@ -354,26 +354,26 @@ class maisha_one_banner extends WP_Widget {
 			$imgalt = isset( $instance['imgalt'] ) ? esc_attr( $instance['imgalt'] ) : '';
 		$imglink = isset( $instance['imglink'] ) ? esc_attr( $instance['imglink'] ) : '';
 		?>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imgurl') ); ?>"><?php esc_html_e('Image URL:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imgurl') ); ?>"><?php esc_html_e('Image URL:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('imgurl') ); ?>" value="<?php echo esc_attr($imgurl); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imgurl') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imgalt') ); ?>"><?php esc_html_e('Image ALT:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imgalt') ); ?>"><?php esc_html_e('Image ALT:','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('imgalt') ); ?>" value="<?php echo esc_attr($imgalt); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imgalt') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imglink') ); ?>"><?php esc_html_e('Image LINK:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imglink') ); ?>"><?php esc_html_e('Image LINK:','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr($this->get_field_name('imglink') ); ?>" value="<?php echo esc_attr($imglink); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imglink') ); ?>" /></p>
 	<?php
 	}
 }
-register_widget('maisha_one_banner');
+register_widget('openhc_one_banner');
 
 /*-----------------------------------------------------------------------------------*/
-/* Custom Maisha Widget: Sidebar Banners Widget
+/* Custom openhc Widget: Sidebar Banners Widget
 /*-----------------------------------------------------------------------------------*/
-class maisha_two_banner extends WP_Widget {
+class openhc_two_banner extends WP_Widget {
 	function __construct() {
-		$widget_ops = array('description' => esc_html__( 'Two Image Banner', 'maisha') );
-		parent::__construct(false, esc_html__('Maisha Sidebar: Two Image Banner', 'maisha'),$widget_ops);
+		$widget_ops = array('description' => esc_html__( 'Two Image Banner', 'openhc') );
+		parent::__construct(false, esc_html__('openhc Sidebar: Two Image Banner', 'openhc'),$widget_ops);
 	}
 	function widget($args, $instance) {
 		$title = apply_filters('widget_title', $instance['title'] );
@@ -418,21 +418,21 @@ class maisha_two_banner extends WP_Widget {
 			$imgalt_one = isset( $instance['imgalt_one'] ) ? esc_attr( $instance['imgalt_one'] ) : '';
 		$imglink_one = isset( $instance['imglink_one'] ) ? esc_attr( $instance['imglink_one'] ) : '';
 		?>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e('Title:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imgurl') ); ?>"><?php esc_html_e('Image One URL:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imgurl') ); ?>"><?php esc_html_e('Image One URL:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('imgurl') ); ?>" value="<?php echo esc_attr($imgurl); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imgurl') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imgalt') ); ?>"><?php esc_html_e('Image One ALT:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imgalt') ); ?>"><?php esc_html_e('Image One ALT:','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('imgalt') ); ?>" value="<?php echo esc_attr($imgalt); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imgalt') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imglink') ); ?>"><?php esc_html_e('Image One LINK:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imglink') ); ?>"><?php esc_html_e('Image One LINK:','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('imglink') ); ?>" value="<?php echo esc_attr($imglink); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imglink') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imgurl_one') ); ?>"><?php esc_html_e('Image Two URL:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imgurl_one') ); ?>"><?php esc_html_e('Image Two URL:','openhc'); ?></label>
 		<input type="text" name="<?php echo esc_attr( $this->get_field_name('imgurl_one') ); ?>" value="<?php echo esc_attr($imgurl_one); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imgurl_one') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imgalt_one') ); ?>"><?php esc_html_e('Image Two ALT:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imgalt_one') ); ?>"><?php esc_html_e('Image Two ALT:','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('imgalt_one') ); ?>" value="<?php echo esc_attr($imgalt_one); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imgalt_one') ); ?>" /></p>
-	<p><label for="<?php echo esc_attr( $this->get_field_id('imglink_one') ); ?>"><?php esc_html_e('Image Two LINK:','maisha'); ?></label>
+	<p><label for="<?php echo esc_attr( $this->get_field_id('imglink_one') ); ?>"><?php esc_html_e('Image Two LINK:','openhc'); ?></label>
 	<input type="text" name="<?php echo esc_attr( $this->get_field_name('imglink_one') ); ?>" value="<?php echo esc_attr($imglink_one); ?>" class="widefat" id="<?php echo esc_attr( $this->get_field_id('imglink_one') ); ?>" /></p>
 	<?php
 	}
 }
-register_widget('maisha_two_banner');
+register_widget('openhc_two_banner');

@@ -7,7 +7,7 @@
 ( function( $ ) {
 	"use strict";
 	// Search toggle.
-		$( '.search-toggle' ).on( 'click.maisha', function( event ) {
+		$( '.search-toggle' ).on( 'click.openhc', function( event ) {
 			var that    = $( this ),
 				wrapper = $( '#search-container' ),
 				container = that.find( 'a' );

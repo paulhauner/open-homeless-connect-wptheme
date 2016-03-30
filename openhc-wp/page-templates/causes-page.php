@@ -6,12 +6,12 @@
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 get_header(); ?>
-	<?php if(get_theme_mod('maisha_causes_layout') == 'top-header-one') : ?>
+	<?php if(get_theme_mod('openhc_causes_layout') == 'top-header-one') : ?>
 	<?php
 	// Start the loop.
 	while ( have_posts() ) : the_post();
@@ -48,7 +48,7 @@ get_header(); ?>
 		</div><!-- .site-content -->
 	</div><!-- .site -->
 
-	<?php elseif(get_theme_mod('maisha_causes_layout') == 'no-header-one') : ?>
+	<?php elseif(get_theme_mod('openhc_causes_layout') == 'no-header-one') : ?>
 	<div class="hfeed site">
 		<div class="content site-content">
 			<div class="content-area">

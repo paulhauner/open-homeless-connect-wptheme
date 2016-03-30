@@ -6,12 +6,12 @@
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 get_header(); ?>
-	<?php if(get_theme_mod('maisha_stories_layout') == 'top-header-two') : ?>
+	<?php if(get_theme_mod('openhc_stories_layout') == 'top-header-two') : ?>
 	<?php
 	// Start the loop.
 	while ( have_posts() ) : the_post();
@@ -39,7 +39,7 @@ get_header(); ?>
 		?>
 	</div>
 	<!-- .child-pages -->
-	<?php elseif(get_theme_mod('maisha_stories_layout') == 'no-header-two') : ?>
+	<?php elseif(get_theme_mod('openhc_stories_layout') == 'no-header-two') : ?>
 	<div class="child-pages columns clear">
 		<?php
 			$child_pages = new WP_Query( array(

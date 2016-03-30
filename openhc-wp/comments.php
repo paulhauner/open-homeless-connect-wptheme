@@ -5,8 +5,8 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 /*
@@ -25,14 +25,14 @@ if ( post_password_required() ) {
 	<div class="titlecomment">
 		<h2 class="comments-title">
 			<?php
-				printf( esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'maisha' ) ),
+				printf( esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'openhc' ) ),
 					number_format_i18n( get_comments_number() ),
 					'<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
 	</div>
 
-		<?php maisha_comment_nav(); ?>
+		<?php openhc_comment_nav(); ?>
 
 		<ol class="comment-list">
 			<?php
@@ -44,7 +44,7 @@ if ( post_password_required() ) {
 			?>
 		</ol><!-- .comment-list -->
 
-		<?php maisha_comment_nav(); ?>
+		<?php openhc_comment_nav(); ?>
 
 	<?php endif; // have_comments() ?>
 
@@ -52,7 +52,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'maisha' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'openhc' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

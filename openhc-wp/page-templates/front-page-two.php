@@ -6,8 +6,8 @@
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 get_header(); ?>
@@ -23,9 +23,9 @@ get_header(); ?>
 		endwhile;
 		?>
 	</div><!-- .intro -->
-	<?php maisha_featured_page_one(); ?>
-	<?php maisha_featured_page_two(); ?>
-	<?php maisha_featured_page_three(); ?>
+	<?php openhc_featured_page_one(); ?>
+	<?php openhc_featured_page_two(); ?>
+	<?php openhc_featured_page_three(); ?>
 	<?php if ( is_active_sidebar( 'sidebar-7' ) ) : ?>
 	 <div class="block-four">
 		<div class="columns clear">

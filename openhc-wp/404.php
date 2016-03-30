@@ -2,8 +2,8 @@
 /**
  * The template for displaying 404 pages (not found)
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 
 get_header(); ?>
@@ -15,10 +15,10 @@ get_header(); ?>
 						<main>
 							<section class="error-404 not-found">
 								<header class="page-header">
-									<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'maisha' ); ?></h1>
+									<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'openhc' ); ?></h1>
 								</header><!-- .page-header -->
 
-								<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'maisha' ); ?></p>
+								<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'openhc' ); ?></p>
 
 								<?php get_search_form(); ?>
 

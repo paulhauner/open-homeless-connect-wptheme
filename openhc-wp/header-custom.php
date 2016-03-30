@@ -4,16 +4,16 @@
  *
  * Displays all of the head element and everything up until the "site-content" div.
  *
- * @package Maisha
- * @since Maisha 1.0
+ * @package openhc
+ * @since openhc 1.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<?php if(get_theme_mod('maisha_favicon')) : ?>
-	<link rel="shortcut icon" href="<?php echo esc_url( get_theme_mod('maisha_favicon') ); ?>" />
+	<?php if(get_theme_mod('openhc_favicon')) : ?>
+	<link rel="shortcut icon" href="<?php echo esc_url( get_theme_mod('openhc_favicon') ); ?>" />
 	<?php endif; ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -21,15 +21,15 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php if(get_theme_mod('maisha_header_layout') == 'standard-header') : ?>
+<?php if(get_theme_mod('openhc_header_layout') == 'standard-header') : ?>
 	<div class="headerblock standard">
 		<div class="content site-content">
-			<a class="skip-link screen-reader-text" href="#site"><?php esc_html_e( 'Skip to content', 'maisha' ); ?></a>
+			<a class="skip-link screen-reader-text" href="#site"><?php esc_html_e( 'Skip to content', 'openhc' ); ?></a>
 			<header id="masthead" class="site-header" role="banner">
 				<div class="header-inner">
-				<?php if ( get_theme_mod( 'maisha_logo' ) ) : ?>
+				<?php if ( get_theme_mod( 'openhc_logo' ) ) : ?>
 					<div class="site-logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'maisha_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'openhc_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 					</div><!-- .site-logo -->
 				<?php else : ?>
 					<div class="site-branding">
@@ -40,7 +40,7 @@
 				<?php if ( has_nav_menu( 'primary' ) ) : ?>
 					<div id="secondary">
 					<nav id="site-navigation" class="navigation-main" role="navigation">
-					<button class="menu-toggle anarielgenericon" aria-controls="primary-menu" aria-expanded="false"><span><?php esc_html_e( 'Primary Menu', 'maisha' ); ?></span></button>
+					<button class="menu-toggle anarielgenericon" aria-controls="primary-menu" aria-expanded="false"><span><?php esc_html_e( 'Primary Menu', 'openhc' ); ?></span></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
 					</div>
@@ -49,9 +49,9 @@
 			</header><!-- .site-header -->
 		</div><!-- .site-content -->
 	</div><!-- .headerblock -->
-	<?php if(!get_theme_mod('maisha_search_top')) : ?>
+	<?php if(!get_theme_mod('openhc_search_top')) : ?>
 	<div class="search-toggle">
-	  <a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container"><?php esc_html_e( 'Search', 'maisha' ); ?></a>
+	  <a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container"><?php esc_html_e( 'Search', 'openhc' ); ?></a>
 	</div>
 	<div id="search-container" class="search-box-wrapper hide">
 	  <div class="search-box">
@@ -59,14 +59,14 @@
 	  </div>
 	</div>
 	<?php endif; ?>
-<?php elseif(get_theme_mod('maisha_header_layout') == 'alternative-header') : ?>
+<?php elseif(get_theme_mod('openhc_header_layout') == 'alternative-header') : ?>
 	<div class="headerblock alternative site">
 		<div class="content site-content">
-			<a class="skip-link screen-reader-text" href="#site"><?php esc_html_e( 'Skip to content', 'maisha' ); ?></a>
+			<a class="skip-link screen-reader-text" href="#site"><?php esc_html_e( 'Skip to content', 'openhc' ); ?></a>
 			<header id="masthead" class="site-header" role="banner">
-				<?php if ( get_theme_mod( 'maisha_logo' ) ) : ?>
+				<?php if ( get_theme_mod( 'openhc_logo' ) ) : ?>
 					<div class="site-logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'maisha_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'openhc_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 					</div><!-- .site-logo -->
 				<?php else : ?>
 					<div class="site-branding">
@@ -77,7 +77,7 @@
 				<?php if ( has_nav_menu( 'primary' ) ) : ?>
 					<div id="secondary">
 					<nav id="site-navigation" class="navigation-main" role="navigation">
-					<button class="menu-toggle anarielgenericon" aria-controls="primary-menu" aria-expanded="false"><span><?php esc_html_e( 'Primary Menu', 'maisha' ); ?></span></button>
+					<button class="menu-toggle anarielgenericon" aria-controls="primary-menu" aria-expanded="false"><span><?php esc_html_e( 'Primary Menu', 'openhc' ); ?></span></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
 					</div>
@@ -85,9 +85,9 @@
 			</header><!-- .site-header -->
 		</div><!-- .site-content -->
 	</div><!-- .headerblock -->
-	<?php if(!get_theme_mod('maisha_search_top')) : ?>
+	<?php if(!get_theme_mod('openhc_search_top')) : ?>
 	<div class="search-toggle">
-	  <a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container"><?php esc_html_e( 'Search', 'maisha' ); ?></a>
+	  <a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container"><?php esc_html_e( 'Search', 'openhc' ); ?></a>
 	</div>
 	<div id="search-container" class="search-box-wrapper hide">
 	  <div class="search-box">
@@ -99,12 +99,12 @@
 	<div class="fixed">
 		<div class="headerblock">
 			<div class="content site-content">
-				<a class="skip-link screen-reader-text" href="#site"><?php esc_html_e( 'Skip to content', 'maisha' ); ?></a>
+				<a class="skip-link screen-reader-text" href="#site"><?php esc_html_e( 'Skip to content', 'openhc' ); ?></a>
 				<header id="masthead" class="site-header" role="banner">
 					<div class="header-inner">
-					<?php if ( get_theme_mod( 'maisha_logo' ) ) : ?>
+					<?php if ( get_theme_mod( 'openhc_logo' ) ) : ?>
 						<div class="site-logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'maisha_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'openhc_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 						</div><!-- .site-logo -->
 					<?php else : ?>
 						<div class="site-branding">
@@ -115,7 +115,7 @@
 					<?php if ( has_nav_menu( 'primary' ) ) : ?>
 						<div id="secondary">
 						<nav id="site-navigation" class="navigation-main" role="navigation">
-						<button class="menu-toggle anarielgenericon" aria-controls="primary-menu" aria-expanded="false"><span><?php esc_html_e( 'Primary Menu', 'maisha' ); ?></span></button>
+						<button class="menu-toggle anarielgenericon" aria-controls="primary-menu" aria-expanded="false"><span><?php esc_html_e( 'Primary Menu', 'openhc' ); ?></span></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 						</nav><!-- #site-navigation -->
 						</div>
@@ -124,9 +124,9 @@
 				</header><!-- .site-header -->
 			</div><!-- .site-content -->
 		</div><!-- .headerblock -->
-		<?php if(!get_theme_mod('maisha_search_top')) : ?>
+		<?php if(!get_theme_mod('openhc_search_top')) : ?>
 		<div class="search-toggle">
-		  <a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container"><?php esc_html_e( 'Search', 'maisha' ); ?></a>
+		  <a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container"><?php esc_html_e( 'Search', 'openhc' ); ?></a>
 		</div>
 		<div id="search-container" class="search-box-wrapper hide">
 		  <div class="search-box">
