@@ -9,13 +9,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
-		<?php
-			if ( is_single() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' );
-			endif;
-		?>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -38,7 +31,7 @@
 					'no_found_rows'  => true,
 				) );
 				while ( $child_pages->have_posts() ) : $child_pages->the_post();
-					 get_template_part( 'content', 'grid' );
+					 get_template_part( 'content', 'grid-front-firstblock' );
 				endwhile;
 				wp_reset_postdata();
 			?>
