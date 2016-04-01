@@ -31,6 +31,11 @@ function openhc_customizer_css() {
 		.pagination .prev,.pagination .next,.tagcloud a,.sticky-post,.page-links a,.cd-panel-container,.aboutpage .cd-fixed-bg-one,.aboutpage .cd-fixed-bg-one.withoutimg, .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content { background-color:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>; }
 		
 		.news .entry-content a.more-link,.news .entry-content a.button,.block-two,.overlay,.info_pic,.info_details .button,.tribe-events-read-more,#tribe-bar-form .tribe-bar-submit input[type=submit],#buddypress div.generic-button a,.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.comment-list .reply a, .footer { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>; }
+
+   
+   .customized-background-color-dark { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>!important; }
+   
+   .customized-background-color-light { background:<?php echo get_theme_mod( 'openhc_light_gray_colors' ); ?>!important; }
 		
 		@media screen and (max-width: 48.75em) {
 			.content-caption { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>; }

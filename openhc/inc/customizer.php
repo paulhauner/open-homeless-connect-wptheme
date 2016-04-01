@@ -429,7 +429,7 @@ function openhc_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'openhc_button_colors', array(
-		'label'             => esc_html__( 'All Elements with Orange Color', 'openhc' ),
+		'label'             => esc_html__( 'Primary Theme Color (eg, Orange)', 'openhc' ),
 		'section'           => 'openhc_new_section_color_general',
 		'settings'          => 'openhc_button_colors',
 		'priority'          => 1,
@@ -440,7 +440,7 @@ function openhc_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'openhc_button_hover_colors', array(
-		'label'             => esc_html__( 'Orange Button Hover Color', 'openhc' ),
+		'label'             => esc_html__( 'Theme Accent Color (eg, Light Orange)', 'openhc' ),
 		'section'           => 'openhc_new_section_color_general',
 		'settings'          => 'openhc_button_hover_colors',
 		'priority'          => 2,

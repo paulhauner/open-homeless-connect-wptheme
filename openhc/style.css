@@ -59,6 +59,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * and Blueprint http://www.blueprintcss.org/
  */
  
+ /*
+ *  Some color tags which will be updated by PHP to match theme colors
+ */
+ .customized-background-color-dark {
+   background: black;
+ }
+ 
+  .customized-background-color-light {
+   background: grey;
+ }
+ 
+ 
+ /*
+ *  Circle graphic with text in the center
+ */
+ 
  .openhc-frontpage-circle {
    background: #f7931d;
    border-radius: 50%;
@@ -77,6 +93,58 @@ Use it to make something cool, have fun, and share what you've learned with othe
    .openhc-frontpage-circle-text a {
    color: white !important;
  }
+  
+ /*
+ *  Second section of front page
+ */
+ 
+ .second-block  {
+	max-width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.second-block h1,
+.second-block h2,
+.second-block h3,
+.second-block h4 {
+  color: white;
+}
+
+.second-block .entry-content {
+  padding: 0px;
+  padding-bottom: 0px !important;
+}
+
+.second-block .lastcolumn {
+  padding-left: 0px !important;
+}
+
+.second-block .big-section {
+  text-align: left;
+  padding: 0 10% 7%;
+  float: left;
+  width: 66.66%;
+}
+
+.second-block .small-section {
+  text-align: left;
+  padding: 0 10% 7%;
+  float: left;
+  width: 33.33%;
+}
+
+@media screen and (max-width: 954px) {
+  .second-block .big-section {
+    width: 100%;
+  }
+
+  .second-block .small-section {
+    width: 100%;
+  }
+}
+
+
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;

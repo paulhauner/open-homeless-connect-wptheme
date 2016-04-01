@@ -10,7 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
 		<?php if ( has_post_thumbnail() ): ?>
-		<div class="one_third">
+		<div class="two_third">
 		<?php
 		// Post thumbnail.
 		openhc_post_thumbnail();
@@ -27,7 +27,7 @@
 			) );
 		?>
 		</div>
-		<div class="two_third lastcolumn">
+		<div class="one_third lastcolumn">
 			<?php
 				$child_pages = new WP_Query( array(
 					'post_type'      => 'page',
