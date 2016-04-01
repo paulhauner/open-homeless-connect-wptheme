@@ -101,41 +101,46 @@ Use it to make something cool, have fun, and share what you've learned with othe
    .openhc-frontpage-circle-text a {
    color: white !important;
  }
-  
+ 
  /*
- *  Second section of front page
+ *  CSS for the third row
  */
  
- .second-block  {
+  
+ /*
+ *  A row that can be split in two. Will collapse.
+ */
+ 
+ .frontpage-dual-split-block  {
 	max-width: 100%;
 	position: relative;
 	text-align: center;
 }
 
-.second-block h1,
-.second-block h2,
-.second-block h3,
-.second-block h4 {
+.frontpage-dual-split-block h1,
+.frontpage-dual-split-block h2,
+.frontpage-dual-split-block h3,
+.frontpage-dual-split-block h4 {
   color: white;
 }
 
-.second-block .entry-content {
+.frontpage-dual-split-block .entry-content {
   padding: 0px;
   padding-bottom: 0px !important;
 }
 
-.second-block .lastcolumn {
+.frontpage-dual-split-block .lastcolumn {
   padding-left: 0px !important;
 }
 
-.second-block .big-section {
+.frontpage-dual-split-block .big-section {
   text-align: left;
   padding: 0 10% 7%;
   float: left;
   width: 66.66%;
 }
 
-.second-block .small-section {
+.frontpage-dual-split-block .small-section {
   text-align: left;
   padding: 0 10% 7%;
   float: left;
@@ -143,11 +148,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 @media screen and (max-width: 954px) {
-  .second-block .big-section {
+  .frontpage-dual-split-block .big-section {
     width: 100%;
   }
 
-  .second-block .small-section {
+  .frontpage-dual-split-block .small-section {
     width: 100%;
   }
 }

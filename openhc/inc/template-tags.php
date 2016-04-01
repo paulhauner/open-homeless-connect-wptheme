@@ -287,7 +287,7 @@ function openhc_featured_page_two() {
 		return;
 	}
 ?>
-<div class="second-block">
+<div class="second-block frontpage-dual-split-block">
 	<?php for ( $page_number = 1; $page_number <= 1; $page_number++ ) : ?>
 		<?php if ( 0 != ${'featured_page_' . $page_number} ) : // Check if a featured page has been set in the customizer ?>
 				<?php
@@ -318,7 +318,7 @@ function openhc_featured_page_three() {
 		return;
 	}
 ?>
-<div class="second-block">
+<div class="second-block frontpage-dual-split-block">
 	<?php for ( $page_number = 1; $page_number <= 1; $page_number++ ) : ?>
 		<?php if ( 0 != ${'featured_page_' . $page_number} ) : // Check if a featured page has been set in the customizer ?>
 				<?php
