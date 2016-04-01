@@ -5,6 +5,10 @@
 function openhc_customizer_css() {
 	?>
 	<style type="text/css">
+ 
+   .customized-background-color-primary { background:<?php echo get_theme_mod( 'openhc_button_colors' ); ?>!important; }
+   .customized-background-color-dark { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>!important; }
+   .customized-background-color-light { background:<?php echo get_theme_mod( 'openhc_light_gray_colors' ); ?>!important; }
 
 		button,input[type="button"], input[type="reset"], input[type="submit"], .widget_calendar tbody a, .page-template-projects-page .columns hr, .page-template-causes-page .columns hr, .page-template-stories-page .columns hr, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce .widget_price_filter .ui-slider .ui-slider-range { background-color:<?php echo get_theme_mod( 'openhc_button_colors' ); ?>; }
 		
@@ -33,9 +37,7 @@ function openhc_customizer_css() {
 		.news .entry-content a.more-link,.news .entry-content a.button,.block-two,.overlay,.info_pic,.info_details .button,.tribe-events-read-more,#tribe-bar-form .tribe-bar-submit input[type=submit],#buddypress div.generic-button a,.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.comment-list .reply a, .footer { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>; }
 
    
-   .customized-background-color-dark { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>!important; }
-   
-   .customized-background-color-light { background:<?php echo get_theme_mod( 'openhc_light_gray_colors' ); ?>!important; }
+  
 		
 		@media screen and (max-width: 48.75em) {
 			.content-caption { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>; }

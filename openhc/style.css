@@ -62,6 +62,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
  /*
  *  Some color tags which will be updated by PHP to match theme colors
  */
+  .customized-background-color-primary {
+   background: limegreen;
+ }
+ 
  .customized-background-color-dark {
    background: black;
  }
