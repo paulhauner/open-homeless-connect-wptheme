@@ -318,34 +318,26 @@ function openhc_featured_page_three() {
 		return;
 	}
 ?>
-<div class="block-three">
-	<div class="hfeed site">
-		<div class="content site-content">
-			<div class="content-area">
-				<div class="main site-main" role="main">
-					<?php for ( $page_number = 1; $page_number <= 1; $page_number++ ) : ?>
-					<?php if ( 0 != ${'featured_page_' . $page_number} ) : // Check if a featured page has been set in the customizer ?>
-							<?php
-								// Create new argument using the page ID of the page set in the customizer
-								$featured_page_args = array(
-									'page_id' => ${'featured_page_' . $page_number},
-								);
-								// Create a new WP_Query using the argument previously created
-								$featured_page_query = new WP_Query( $featured_page_args );
-							?>
-							<?php while ( $featured_page_query->have_posts() ) : $featured_page_query->the_post(); ?>
-								<?php get_template_part( 'content', 'front-thirdblock' ); ?>
-							<?php
-								endwhile;
-								wp_reset_postdata();
-							?>
-					<?php endif; ?>
-					<?php endfor; ?>
-				</div><!-- .site-main -->
-			</div><!-- .content-area -->
-		</div><!-- .site-content -->
-	</div><!-- .site -->
-</div><!-- .block-one -->
+<div class="second-block">
+	<?php for ( $page_number = 1; $page_number <= 1; $page_number++ ) : ?>
+		<?php if ( 0 != ${'featured_page_' . $page_number} ) : // Check if a featured page has been set in the customizer ?>
+				<?php
+					// Create new argument using the page ID of the page set in the customizer
+					$featured_page_args = array(
+						'page_id' => ${'featured_page_' . $page_number},
+					);
+					// Create a new WP_Query using the argument previously created
+					$featured_page_query = new WP_Query( $featured_page_args );
+				?>
+				<?php while ( $featured_page_query->have_posts() ) : $featured_page_query->the_post(); ?>
+					<?php get_template_part( 'content', 'front-thirdblock' ); ?>
+				<?php
+					endwhile;
+					wp_reset_postdata();
+				?>
+		<?php endif; ?>
+	<?php endfor; ?>
+</div><!-- .second-block -->
 <?php
 }
 /**

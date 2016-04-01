@@ -473,7 +473,7 @@ function openhc_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'openhc_header_colors', array(
-		'label'             => esc_html__( 'White Header Background', 'openhc' ),
+		'label'             => esc_html__( 'Theme Contrast Color (eg, White)', 'openhc' ),
 		'section'           => 'openhc_new_section_color_general',
 		'settings'          => 'openhc_header_colors',
 		'priority'          => 5,

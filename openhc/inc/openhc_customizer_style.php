@@ -9,6 +9,7 @@ function openhc_customizer_css() {
    .customized-background-color-primary { background:<?php echo get_theme_mod( 'openhc_button_colors' ); ?>!important; }
    .customized-background-color-dark { background:<?php echo get_theme_mod( 'openhc_dark_button_colors' ); ?>!important; }
    .customized-background-color-light { background:<?php echo get_theme_mod( 'openhc_light_gray_colors' ); ?>!important; }
+   .customized-background-color-contrast { background:<?php echo get_theme_mod( 'openhc_header_colors' ); ?>!important; }
 
 		button,input[type="button"], input[type="reset"], input[type="submit"], .widget_calendar tbody a, .page-template-projects-page .columns hr, .page-template-causes-page .columns hr, .page-template-stories-page .columns hr, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce .widget_price_filter .ui-slider .ui-slider-range { background-color:<?php echo get_theme_mod( 'openhc_button_colors' ); ?>; }
 		

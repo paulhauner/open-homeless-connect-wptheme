@@ -7,10 +7,10 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-content">
+
+	<div class="entry-content customized-background-color-contrast">
 		<?php if ( has_post_thumbnail() ): ?>
-		<div class="two_third">
+		<div class="small-section customized-background-color-primary">
 		<?php
 		// Post thumbnail.
 		openhc_post_thumbnail();
@@ -27,7 +27,7 @@
 			) );
 		?>
 		</div>
-		<div class="one_third lastcolumn">
+		<div class="big-section lastcolumn">
 			<?php
 				$child_pages = new WP_Query( array(
 					'post_type'      => 'page',
@@ -38,13 +38,13 @@
 					'no_found_rows'  => true,
 				) );
 				while ( $child_pages->have_posts() ) : $child_pages->the_post();
-					 get_template_part( 'content', 'icon-list' );
+					 get_template_part( 'content', 'grid-front-secondblock' );
 				endwhile;
 				wp_reset_postdata();
 			?>
 		</div>
 		<?php elseif($post->post_content != "") : ?>
-		<div class="one_third">
+		<div class="small-section customized-background-color-primary">
 		<?php
 		// Post thumbnail.
 		openhc_post_thumbnail();
@@ -61,7 +61,7 @@
 			) );
 		?>
 		</div>
-		<div class="two_third lastcolumn">
+		<div class="big-section lastcolumn">
 			<?php
 				$child_pages = new WP_Query( array(
 					'post_type'      => 'page',
@@ -72,7 +72,7 @@
 					'no_found_rows'  => true,
 				) );
 				while ( $child_pages->have_posts() ) : $child_pages->the_post();
-					 get_template_part( 'content', 'icon-list' );
+					 get_template_part( 'content', 'grid-front-secondblock' );
 				endwhile;
 				wp_reset_postdata();
 			?>
@@ -88,10 +88,9 @@
 				'no_found_rows'  => true,
 			) );
 			while ( $child_pages->have_posts() ) : $child_pages->the_post();
-				 get_template_part( 'content', 'icon-list' );
+				 get_template_part( 'content', 'grid-front-secondblock' );
 			endwhile;
 			wp_reset_postdata();
 		?>
 		<?php endif; ?>
 	</div><!-- .entry-content -->
-</article><!-- #post-## -->
