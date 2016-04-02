@@ -8,9 +8,9 @@
 ?>
 
 
-	<div class="entry-content customized-background-color-dark">
+	<div class="entry-content customized-background-color-dark-muted">
 		<?php if ( has_post_thumbnail() ): ?>
-		<div class="big-section customized-background-color-light">
+		<div class="big-section customized-background-color-light-muted">
 		<?php
 		// Post thumbnail.
 		openhc_post_thumbnail();
@@ -44,7 +44,7 @@
 			?>
 		</div>
 		<?php elseif($post->post_content != "") : ?>
-		<div class="big-section customized-background-color-light">
+		<div class="big-section customized-background-color-light-muted">
 		<?php
 		// Post thumbnail.
 		openhc_post_thumbnail();

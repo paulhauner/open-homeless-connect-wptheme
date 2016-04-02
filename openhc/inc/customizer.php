@@ -467,6 +467,28 @@ function openhc_customize_register( $wp_customize ) {
 		'settings'          => 'openhc_light_gray_colors',
 		'priority'          => 4,
 	) ) );
+  
+  $wp_customize->add_setting( 'openhc_dark_muted_colors', array(
+		'default'           => '#333',
+		'sanitize_callback' => 'sanitize_hex_color'
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'openhc_dark_muted_colors', array(
+		'label'             => esc_html__( 'Dark Muted Background Elements', 'openhc' ),
+		'section'           => 'openhc_new_section_color_general',
+		'settings'          => 'openhc_dark_muted_colors',
+		'priority'          => 3,
+	) ) );
+
+	$wp_customize->add_setting( 'openhc_light_muted_colors', array(
+		'default'           => '#f5f4f4',
+		'sanitize_callback' => 'sanitize_hex_color'
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'openhc_light_muted_colors', array(
+		'label'             => esc_html__( 'Light Muted Background Elements', 'openhc' ),
+		'section'           => 'openhc_new_section_color_general',
+		'settings'          => 'openhc_light_muted_colors',
+		'priority'          => 4,
+	) ) );
 
 	$wp_customize->add_setting( 'openhc_header_colors', array(
 		'default'           => '#ffffff',
