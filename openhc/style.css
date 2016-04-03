@@ -164,6 +164,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
 }
 
+/*
+* El Footer del sito
+*
+*/
+
+.bottomnav {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+ }
+ 
+ .bottomnav-items {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 80%;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+ 
+ .bottomnav-items ul {
+   margin: 0;
+ }
+ 
+ .bottomnav-items ul li {
+   display: inline;
+   margin-left: 20px;
+ }
+
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {

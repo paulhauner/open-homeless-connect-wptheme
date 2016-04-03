@@ -35,6 +35,16 @@
 				</div><!-- .site-info -->
 			</div><!-- .page -->
 		</div><!-- .footer -->
+    <div class="bottomnav customized-background-color-contrast">
+      <div class="bottomnav-items">
+        <ul>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="/site-map">Site Map</a></li>
+          <li><a href="/copyright-abn">Copyright | ABN</a></li>
+        </ul>
+      </div>
+    </div>
 		<?php if ( has_nav_menu( 'social' ) ) : ?>
 			<nav id="social-navigation" class="social-navigation" role="navigation">
 				<?php
@@ -51,6 +61,5 @@
 	</footer><!-- .site-footer -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
