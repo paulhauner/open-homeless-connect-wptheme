@@ -129,20 +129,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding-bottom: 0px !important;
 }
 
-.frontpage-dual-split-block .lastcolumn {
-  padding-left: 0px !important;
+.frontpage-dual-split-block .content-right-block {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.frontpage-dual-split-block .post-thumbnail {
+  margin-bottom: 0px !important;
 }
 
 .frontpage-dual-split-block .big-section {
   text-align: left;
-  padding: 0 10% 7%;
   float: left;
   width: 66.66%;
 }
 
 .frontpage-dual-split-block .small-section {
   text-align: left;
-  padding: 0 10% 7%;
   float: left;
   width: 33.33%;
 }
@@ -3429,7 +3432,7 @@ a.more-link {
 	padding-top: 2px;
 	float: left;
 }
-
+q
 .content-right-block {
 	display: table;
     margin-left: 70px;

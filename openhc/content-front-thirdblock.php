@@ -8,9 +8,9 @@
 ?>
 
 
-	<div class="entry-content customized-background-color-contrast">
+	<div class="entry-content customized-background-color-primary">
 		<?php if ( has_post_thumbnail() ): ?>
-		<div class="small-section customized-background-color-primary">
+		<div class="small-section">
 		<?php
 		// Post thumbnail.
 		openhc_post_thumbnail();
@@ -44,22 +44,26 @@
 			?>
 		</div>
 		<?php elseif($post->post_content != "") : ?>
-		<div class="small-section customized-background-color-primary">
-		<?php
-		// Post thumbnail.
-		openhc_post_thumbnail();
-		?>
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'openhc' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
-		?>
+		<div class="small-section">
+      <div class="entry-content">
+        <div class="content-right-block">
+          <?php
+          // Post thumbnail.
+          openhc_post_thumbnail();
+          ?>
+          <?php the_content(); ?>
+          <?php
+            wp_link_pages( array(
+              'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'openhc' ) . '</span>',
+              'after'       => '</div>',
+              'link_before' => '<span>',
+              'link_after'  => '</span>',
+              'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>%',
+              'separator'   => '<span class="screen-reader-text">, </span>',
+            ) );
+          ?>
+        </div>
+      </div>
 		</div>
 		<div class="big-section lastcolumn">
 			<?php

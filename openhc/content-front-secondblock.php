@@ -45,21 +45,25 @@
 		</div>
 		<?php elseif($post->post_content != "") : ?>
 		<div class="big-section customized-background-color-light-muted">
-		<?php
-		// Post thumbnail.
-		openhc_post_thumbnail();
-		?>
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'openhc' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
-		?>
+      <div class="entry-content">
+        <div class="content-right-block">
+        <?php
+        // Post thumbnail.
+        openhc_post_thumbnail();
+        ?>
+        <?php the_content(); ?>
+        <?php
+          wp_link_pages( array(
+            'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'openhc' ) . '</span>',
+            'after'       => '</div>',
+            'link_before' => '<span>',
+            'link_after'  => '</span>',
+            'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'openhc' ) . ' </span>%',
+            'separator'   => '<span class="screen-reader-text">, </span>',
+          ) );
+        ?>
+        </div>
+      </div>
 		</div>
 		<div class="small-section lastcolumn">
 			<?php
