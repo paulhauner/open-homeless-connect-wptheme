@@ -98,6 +98,14 @@
 <?php else: ?>
 	<div class="fixed">
 		<div class="headerblock">
+      <div class="topnav customized-background-color-primary">
+        <div class="topnav-items">
+          <ul>
+            <li><a href="/contact-us" class="customized-color-contrast">Contact Us</a></li>
+            <li><a href="/about-us" class="customized-color-contrast">About Us</a></li>
+          </ul>
+        </div>
+      </div>
 			<div class="content site-content">
 				<a class="skip-link screen-reader-text" href="#site"><?php esc_html_e( 'Skip to content', 'openhc' ); ?></a>
 				<header id="masthead" class="site-header" role="banner">

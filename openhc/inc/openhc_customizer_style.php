@@ -5,7 +5,8 @@
 function openhc_customizer_css() {
 	?>
 	<style type="text/css">
- 
+  
+   .customized-color-contrast { color:<?php echo get_theme_mod( 'openhc_header_colors' ); ?>!important; }
    .customized-background-color-primary { background:<?php echo get_theme_mod( 'openhc_button_colors' ); ?>!important; }
    .customized-background-color-dark-muted { background:<?php echo get_theme_mod( 'openhc_dark_muted_colors' ); ?>!important; }
    .customized-background-color-light-muted { background:<?php echo get_theme_mod( 'openhc_light_muted_colors' ); ?>!important; }
