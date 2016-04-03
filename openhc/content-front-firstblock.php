@@ -9,7 +9,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
-		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'openhc' ) . '</span>',
@@ -33,9 +32,10 @@
 				while ( $child_pages->have_posts() ) : $child_pages->the_post();
 					 get_template_part( 'content', 'grid-front-firstblock' );
 				endwhile;
-				wp_reset_postdata();
+        setup_postdata( wp_get_post_parent_id( $post->ID ) );
 			?>
 		</div>
-		<!-- .child-pages -->
+		<!-- .child-pages  -->
+    <?php the_content(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
