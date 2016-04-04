@@ -20,7 +20,7 @@ function openhc_customize_register( $wp_customize ) {
 
 	$wp_customize->add_section( 'openhc_theme_options', array(
 		'title'    => esc_html__( 'Front Page', 'openhc' ),
-		'priority' => 34,
+		'priority' => 33,
 	) );
 
 	/* Front Page: Featured Page One */
@@ -58,6 +58,51 @@ function openhc_customize_register( $wp_customize ) {
 		'priority'          => 11,
 		'type'              => 'dropdown-pages',
 	) );
+  
+  /* Events */
+  
+  $wp_customize->add_section( 'openhc_theme_options_event', array(
+		'title'    => esc_html__( 'Event Page', 'openhc' ),
+		'priority' => 34,
+	) );
+
+	/* Event Page: Featured Page One */
+	$wp_customize->add_setting( 'openhc_event_page_one', array(
+		'default'           => '',
+		'sanitize_callback' => 'openhc_sanitize_dropdown_pages',
+	) );
+	$wp_customize->add_control( 'openhc_event_page_one', array(
+		'label'             => esc_html__( 'First Content Block', 'openhc' ),
+		'section'           => 'openhc_theme_options_event',
+		'priority'          => 9,
+		'type'              => 'dropdown-pages',
+	) );
+
+	/* Event Page: Featured Page Two */
+	$wp_customize->add_setting( 'openhc_event_page_two', array(
+		'default'           => '',
+		'sanitize_callback' => 'openhc_sanitize_dropdown_pages',
+	) );
+	$wp_customize->add_control( 'openhc_event_page_two', array(
+		'label'             => esc_html__( 'Second Content Block', 'openhc' ),
+		'section'           => 'openhc_theme_options_event',
+		'priority'          => 10,
+		'type'              => 'dropdown-pages',
+	) );
+
+	/* Event Page: Featured Page Three */
+	$wp_customize->add_setting( 'openhc_event_page_three', array(
+		'default'           => '',
+		'sanitize_callback' => 'openhc_sanitize_dropdown_pages',
+	) );
+	$wp_customize->add_control( 'openhc_event_page_three', array(
+		'label'             => esc_html__( 'Third Content Block', 'openhc' ),
+		'section'           => 'openhc_theme_options_event',
+		'priority'          => 11,
+		'type'              => 'dropdown-pages',
+	) );
+  
+  /**/
 
 	$wp_customize->add_section( 'openhc_theme_options_about', array(
 		'title'    => esc_html__( 'About Page', 'openhc' ),

@@ -341,6 +341,99 @@ function openhc_featured_page_three() {
 <?php
 }
 /**
+ * Event Page - Featured Page One
+ */
+function openhc_event_page_one() {
+	$featured_page_1 = esc_attr( get_theme_mod( 'openhc_event_page_one', '0' ) );
+	if ( 0 == $featured_page_1 ) {
+		return;
+	}
+?>
+<div class="second-block frontpage-dual-split-block ">
+	<?php for ( $page_number = 1; $page_number <= 1; $page_number++ ) : ?>
+		<?php if ( 0 != ${'featured_page_' . $page_number} ) : // Check if a featured page has been set in the customizer ?>
+				<?php
+					// Create new argument using the page ID of the page set in the customizer
+					$featured_page_args = array(
+						'page_id' => ${'featured_page_' . $page_number},
+					);
+					// Create a new WP_Query using the argument previously created
+					$featured_page_query = new WP_Query( $featured_page_args );
+				?>
+				<?php while ( $featured_page_query->have_posts() ) : $featured_page_query->the_post(); ?>
+					<?php get_template_part( 'content', 'event-firstblock' ); ?>
+				<?php
+					endwhile;
+					wp_reset_postdata();
+				?>
+		<?php endif; ?>
+	<?php endfor; ?>
+</div><!-- .second-block -->
+<?php
+}
+/**
+ * Event Page - Featured Page Two
+ */
+function openhc_event_page_two() {
+	$featured_page_1 = esc_attr( get_theme_mod( 'openhc_event_page_two', '0' ) );
+	if ( 0 == $featured_page_1 ) {
+		return;
+	}
+?>
+<div class="second-block frontpage-dual-split-block">
+	<?php for ( $page_number = 1; $page_number <= 1; $page_number++ ) : ?>
+		<?php if ( 0 != ${'featured_page_' . $page_number} ) : // Check if a featured page has been set in the customizer ?>
+				<?php
+					// Create new argument using the page ID of the page set in the customizer
+					$featured_page_args = array(
+						'page_id' => ${'featured_page_' . $page_number},
+					);
+					// Create a new WP_Query using the argument previously created
+					$featured_page_query = new WP_Query( $featured_page_args );
+				?>
+				<?php while ( $featured_page_query->have_posts() ) : $featured_page_query->the_post(); ?>
+					<?php get_template_part( 'content', 'event-secondblock' ); ?>
+				<?php
+					endwhile;
+					wp_reset_postdata();
+				?>
+		<?php endif; ?>
+	<?php endfor; ?>
+</div><!-- .second-block -->
+<?php
+}
+/**
+ * Event Page - Featured Page Three
+ */
+function openhc_event_page_three() {
+	$featured_page_1 = esc_attr( get_theme_mod( 'openhc_event_page_three', '0' ) );
+	if ( 0 == $featured_page_1 ) {
+		return;
+	}
+?>
+<div class="second-block frontpage-dual-split-block">
+	<?php for ( $page_number = 1; $page_number <= 1; $page_number++ ) : ?>
+		<?php if ( 0 != ${'featured_page_' . $page_number} ) : // Check if a featured page has been set in the customizer ?>
+				<?php
+					// Create new argument using the page ID of the page set in the customizer
+					$featured_page_args = array(
+						'page_id' => ${'featured_page_' . $page_number},
+					);
+					// Create a new WP_Query using the argument previously created
+					$featured_page_query = new WP_Query( $featured_page_args );
+				?>
+				<?php while ( $featured_page_query->have_posts() ) : $featured_page_query->the_post(); ?>
+					<?php get_template_part( 'content', 'front-thirdblock' ); ?>
+				<?php
+					endwhile;
+					wp_reset_postdata();
+				?>
+		<?php endif; ?>
+	<?php endfor; ?>
+</div><!-- .second-block -->
+<?php
+}
+/**
  * About Page - Featured Page One
  */
 function openhc_featured_aboutpage_one() {

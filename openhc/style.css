@@ -70,16 +70,34 @@ Use it to make something cool, have fun, and share what you've learned with othe
    background: limegreen;
  }
  
- .customized-background-color-dark {
+ .customized-background-color-dark-muted {
    background: black;
  }
+ .customized-background-color-dark-muted h1,
+ .customized-background-color-dark-muted h2,
+ .customized-background-color-dark-muted h3,
+ .customized-background-color-dark-muted h4 {
+   color: white !important;
+ }
  
-  .customized-background-color-light {
+  .customized-background-color-light-muted {
    background: grey;
+ }
+ .customized-background-color-light-muted h1,
+ .customized-background-color-light-muted h2,
+ .customized-background-color-light-muted h3,
+ .customized-background-color-light-muted h4 {
+   color: white !important;
  }
  
  .customized-background-color-contrast {
    background: peachpuff;
+ }
+ .customized-background-color-contrast h1,
+ .customized-background-color-contrast h2,
+ .customized-background-color-contrast h3,
+ .customized-background-color-contrast h4 {
+   color: black;
  }
  
  
@@ -121,13 +139,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	text-align: center;
 }
 
-.frontpage-dual-split-block h1,
-.frontpage-dual-split-block h2,
-.frontpage-dual-split-block h3,
-.frontpage-dual-split-block h4 {
-  color: white;
-}
-
 .frontpage-dual-split-block .entry-content {
   padding: 0px;
   padding-bottom: 0px !important;
@@ -146,6 +157,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   text-align: left;
   float: left;
   width: 66.66%;
+}
+
+.frontpage-dual-split-block .half-section {
+  text-align: left;
+  float: left;
+  width: 50%;
 }
 
 .frontpage-dual-split-block .small-section {
